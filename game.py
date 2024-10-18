@@ -7,7 +7,7 @@ from constants import *
 
 
 # load the game confiuration from pieces.json and level.json
-board = Loader.loadJSON()
+board = Loader.loadJSON("level1")
 
 # Initialize Pygame
 pygame.init()

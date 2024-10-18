@@ -4,17 +4,17 @@ import json
 
 class Loader:
     @staticmethod
-    def loadJSON():
+    def loadJSON(lvl: str):
         # load pieces
         # Load JSON from a file
         with open('pieces.json', 'r') as file:
             piecesJSON = json.load(file)
 
         # convert JSON to python data types
-        pieces = [None] * 10
+        pieces = []
         for pieceJSON in piecesJSON.get("pieces"):
             piece = Piece(pieceJSON)
-            pieces[piece.id] = piece
+            pieces.append(piece)
 
         # load level
         # Load JSON from a file
@@ -22,6 +22,6 @@ class Loader:
             level = json.load(file)
 
         # convert JSON to python data type
-        board = Board(level["level1"], pieces)
+        board = Board(level[lvl], pieces)
 
         return board

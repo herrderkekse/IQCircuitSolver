@@ -22,3 +22,7 @@ CURSOR_COL = (255, 0, 0)
 FONT_SIZE = 48
 DISPLAY_DURATION = 1000  # millis
 TEXT_COL = (255, 0, 0)
+
+# pieces
+# IDs of the pieces that can be layed on their side
+SIDEABLE_IDS = [5, 6, 7, 8]

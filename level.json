@@ -1,6 +1,13 @@
 {
-    "level1":{
-        "layout" : "(8,4)",
-        "vertices" : ["(5,3)", "(11,3)"]
+    "level0": {
+        "layout": "(4,3)",
+        "vertices": []
+    },
+    "level1": {
+        "layout": "(8,4)",
+        "vertices": [
+            "(5,3)",
+            "(11,3)"
+        ]
     }
 }
